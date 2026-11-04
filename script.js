@@ -1,4 +1,3 @@
-<script>
 (function(root){'use strict';
 const REF={diag:934,dpi:520,gen:185},K=REF.dpi*REF.gen;
   const LV={low:{general:155,redDot:145,x2:135,x4:115,sniper:55,camera:165,fire:65},mid:{general:185,redDot:175,x2:165,x4:145,sniper:85,camera:195,fire:60},high:{general:200,redDot:190,x2:180,x4:160,sniper:105,camera:200,fire:50}};
@@ -45,4 +44,3 @@ for(let k=0;k<80&&!best;k++){const r=one();if(!r.dup)best=r;}
 return best||any;};
 root.ZnexCalc={REF,K,LV,SK,TC,DEV,clampI,snap50,snapTo,compute};
 })(window);
-</script>
