@@ -26,7 +26,7 @@ cfg=(typeof cfg==='string'?TC[cfg]:cfg)||TC.free;
 const H=Array.isArray(hist)?hist:[];
 const base=LV[level]||LV.mid;
 const sf=cfg.dev>=1?Math.min(1.1,Math.max(.9,REF.diag/DEV.diag)):1;
-const gm=(hasDpi?.92:1)*sf,gT=base.general*gm;
+const gm=(hasDpi ? .92 : 1)*sf, gT=base.general*gm;
 const hs=new Set(H.map(h=>h.sig)),lastGens=new Set(H.slice(0,2).map(h=>h.gen));
 const one=()=>{
 const sv=1+rndR(-cfg.jit,cfg.jit);
